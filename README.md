@@ -1,22 +1,36 @@
-# test-react
+## Goal
 
-Integrate the screen below as best as you can.
+The goal of the test is to create a list of shops, using the following libraries:
+- React, TypeScript
+- Redux
+- react-hook-form for forms.
+- Sass
 
-- Request the data from the route : https://www.leshabitues.fr/testapi/shops
-- Parse the response
-- Create any Components you might find necessary as the layout with logo, name, address and maxoffer amount will be reused.
-- Add a loader and error handling in case the network is slow or api is down.
-- Add a link, button or pull-to-refresh to update the Shop list content in one click.
-- You can use Typescript, Redux, StyledComponents... or any other package you might find useful and helpful.
+#### Rules
 
-## Rules to follow
--  You must commit regularly so we can follow your progress with an initial empty commit when you start the test
--  Use the font [Lato Regular](https://fonts.google.com/specimen/Lato) and the following colors : `#4A90E2`,`#C4C4C4`
+- You must use Redux to store and update your data.
+- For each shop in the list you must display at least logo, name, address and his best offer.
+- The list must display 10 items per page and must be paginated.
+- A form to add a new shop to the list.
 
-## Deliverables
+##### Bonus
 
--   the link to the git repository
--   several commits, with an explicit message each time
--   a separate file or email documenting your process and principles you've followed
+You can make shops in the list editable with the form.
 
-![alt-text](https://s3.eu-west-3.amazonaws.com/lh-prod-static/img/job/test-mobile-view.png )
+Feel free to use any other libraries if you feel like it :
+- Storybook
+- Yup
+- ...
+
+
+A good code quality is expected and a good design is appreciate.
+
+## API
+
+The API is available at
+https://www.leshabitues.fr
+
+The routes are:
+
+### Shops
+- Listing shops: GET `/testapi/shops`
